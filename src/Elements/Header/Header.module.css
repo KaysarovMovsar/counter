@@ -1,0 +1,33 @@
+.Wrapper {
+    margin: 0 auto;
+}
+
+.header {
+    width: 769px;
+    height: 82px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: 'Gilroy';
+}
+
+.list {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #003399;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.list li {
+    margin-left: 30px;
+}
+
+.right_header {
+    width: 569px;
+    height: 82px;
+}

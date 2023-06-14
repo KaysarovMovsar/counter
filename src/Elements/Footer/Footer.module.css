@@ -1,0 +1,35 @@
+.Wrapper {
+    margin: 0 auto;
+    width: 769px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #808080;
+    margin: 252px auto 0;
+    align-items: center;
+}
+
+.first_list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+.first_list li {
+    padding-right: 30px;
+}
+
+.second_list {
+    list-style: none;
+    padding: 0;
+    font-weight: 400;
+}
