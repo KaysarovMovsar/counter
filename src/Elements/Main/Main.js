@@ -1,30 +1,33 @@
 import s from './Main.module.css'
-import React, {useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
 
 const Main = () => {
-    const [counter, setCounter] = useState(0)
+    const count = useSelector((state) => state)
+    const dispatch = useDispatch()
 
     const increase = () => {
-        setCounter(counter + 3);
-    };
+        dispatch({
+            type: 'increase'
+        })
+    }
 
     const decrease = () => {
-        if (counter - 2 < 0) {
-            setCounter(0);
-        } else {
-            setCounter(counter - 2);
-        }
-    };
+        dispatch({
+            type: 'decrease'
+        })
+    }
 
-    const reset = () =>{
-        setCounter(0)
+    const reset = () => {
+        dispatch({
+            type: 'reset'
+        })
     }
 
     return (
         <div className={s.Wrapper}>
             <div className={s.main}>
                 <div className={s.counter}>
-                    <span>{counter}</span>
+                    <span>{count}</span>
                 </div>
                 <div className={s.button_list}>
                     <button onClick={increase}>Увеличить</button>
